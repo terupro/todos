@@ -66,10 +66,12 @@ class _HomePageState extends ConsumerState<HomePage> {
       body: GestureDetector(
         onTap: () => FocusScope.of(context).unfocus(),
         child: SafeArea(
+          bottom: false,
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.all(8),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                 child: Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(17),
@@ -175,7 +177,8 @@ class _HomePageState extends ConsumerState<HomePage> {
                                 ),
                                 decoration: InputDecoration(
                                   filled: false,
-                                  contentPadding: const EdgeInsets.all(13),
+                                  contentPadding: const EdgeInsets.symmetric(
+                                      horizontal: 10, vertical: 0),
                                   focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: kTextFieldBorderColor(
@@ -218,7 +221,7 @@ class _HomePageState extends ConsumerState<HomePage> {
               ),
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 5),
+                  padding: const EdgeInsets.symmetric(horizontal: 7.3),
                   child: ListView(
                     children: allCard(todoItems, todoNotifierProvider),
                   ),

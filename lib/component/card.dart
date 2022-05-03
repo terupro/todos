@@ -17,27 +17,28 @@ Widget card(TodoItemData item, TodoDatabaseNotifier db) {
           borderRadius: kMainBorderRadius,
         ),
         child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 10),
+          padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 1.5),
           alignment: Alignment.center,
           decoration: BoxDecoration(
             color: kCardColor(_darkModeProvider),
             borderRadius: kMainBorderRadius,
             boxShadow: [
               BoxShadow(
-                offset: const Offset(5, 5),
+                offset: const Offset(4, 4),
                 color: kCardTopShadow(_darkModeProvider),
-                blurRadius: 8,
+                blurRadius: 6,
                 inset: true,
               ),
               BoxShadow(
-                offset: const Offset(-4, -4),
+                offset: const Offset(-3, -3),
                 color: kCardBottomShadow(_darkModeProvider),
-                blurRadius: 8,
+                blurRadius: 6,
                 inset: true,
               ),
             ],
           ),
           child: ListTile(
+            horizontalTitleGap: 5,
             title: Text(
               item.title,
               style: TextStyle(
