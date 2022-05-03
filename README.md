@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+## Image
+
+|ライトモード|ダークモード|
+|---|---|
+|<img src="https://user-images.githubusercontent.com/92189386/166176099-f4eca6e3-a43b-4538-b9f0-977bc15afdfa.png" width="300">|<img src="https://user-images.githubusercontent.com/92189386/166176106-820ff646-c2f6-4821-be73-b4b59b3137bb.png" width="300">|
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
