@@ -34,6 +34,7 @@ dependencies:
   flutter_form_builder: ^7.1.1
   flutter_inset_box_shadow: ^1.0.8
   flutter_keyboard_visibility: ^5.2.0
+  flutter_native_splash: ^2.1.6
   flutter_riverpod: ^1.0.3
   freezed: ^1.0.0
   open_file: ^3.2.1
@@ -91,3 +92,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_native_splash:
+  color: '#ffffff'
+  image: 'assets/splash_light.png'

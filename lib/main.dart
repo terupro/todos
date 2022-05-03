@@ -18,6 +18,7 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final _darkModeProvider = ref.watch(darkModeProvider);
+    final _darkModeNotifier = ref.watch(darkModeProvider.notifier);
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -34,6 +35,7 @@ class MyApp extends ConsumerWidget {
                 bodyText2: TextStyle(color: Colors.black54),
               ),
             ),
+
       home: const HomePage(),
     );
   }
