@@ -178,7 +178,9 @@ class _HomePageState extends ConsumerState<HomePage> {
                                 decoration: InputDecoration(
                                   filled: false,
                                   contentPadding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 0),
+                                    horizontal: 15,
+                                    vertical: 0,
+                                  ),
                                   focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: kTextFieldBorderColor(
